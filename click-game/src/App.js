@@ -14,6 +14,11 @@ class App extends Component {
 
 
  } 
+  // shuffle functionality, will require some randomized ordering after an image is clicked
+
+
+  // click functionality, will need to add to state, will need to check if in state and dump out of game if true
+
 
 
 
@@ -23,7 +28,7 @@ class App extends Component {
         <Navbar
         // status
         // score
-        // score
+        // high score
          />
         <div>
             <p> Each time you pick an "original" meme you'll score a point. Select the same meme twice and it's game over!</p>
