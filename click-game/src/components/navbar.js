@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css"
 
-function Navbar(){
+function Navbar(props){
     return (
         <div>
             <nav className="navbar fixed-top">
