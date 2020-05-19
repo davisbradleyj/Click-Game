@@ -33,7 +33,7 @@ class App extends Component {
     // if meme was not already clicked...
     } else {
       // last fuctionality problem solved... you DID NOT have score and click acting as set state - 
-      // cannot put a commat after the first element
+      // cannot put a comma after the first element
       // add 1 to score
       this.setState({ score: this.state.score + 1 })
         // add the meme id to "click" array
