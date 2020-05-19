@@ -8,4 +8,5 @@ img{
 .card {
     background-color:rgb(226, 226, 226);
     border: none;
+    padding: 0px 10px 10px;
 }
