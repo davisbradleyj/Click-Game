@@ -1,16 +1,17 @@
 import React from "react";
 import "./card.css"
 
-function Card (props){
+function Card(props) {
     return (
-        <div className="card">
-            <img src={props.Meme} onClick={() => props.memeClick(props.id)} />
+        <div className="row">
+            <div className="col-md-1">
+                <div className="card">
+                    <img src={props.meme} alt={props.alt} onClick={() => props.memeClicked(props.id)} />
+                </div>
+            </div>
         </div>
     )
 }
-
-
-
-
-
 export default Card
+
+
