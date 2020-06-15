@@ -1,4 +1,4 @@
-img{
+img {
     height: 150px;
     width: 200px;
     border-radius: 15%;
@@ -7,7 +7,7 @@ img{
 }
 
 .card {
-    background-color:rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226);
     border: none;
     padding: 0px 10px 15px;
 

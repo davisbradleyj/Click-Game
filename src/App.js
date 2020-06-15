@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   // click functionality, will need to add to state, will need to check if in state and dump out of game if true
-  memeClicked = id => {
+  handleClick = id => {
     // check if meme already selected
     if (this.state.click.includes(id)) {
       console.log("meme already clicked")
@@ -27,17 +27,20 @@ class App extends Component {
           highScore: this.state.score})
         // then set.State to 0 score, and set.State to a blank array for click
         };
-        this.setState({score: 0})
-        this.setState({click: []})
+        this.setState({
+          score: 0,
+          click: []
+        })
 
     // if meme was not already clicked...
     } else {
       // last fuctionality problem solved... you DID NOT have score and click acting as set state - 
       // cannot put a comma after the first element
-      // add 1 to score
-      this.setState({ score: this.state.score + 1 })
-        // add the meme id to "click" array
-      this.setState({ click: [...this.state.click, id] });
+      // add 1 to score, and add meme id to "click" array
+      this.setState({ 
+        score: this.state.score + 1,
+        click: [...this.state.click, id] 
+      });
     };
     // shuffle "deck" of memes function is called
     let imageClick = this.state.memes
@@ -82,7 +85,7 @@ class App extends Component {
               id={memes.id}
               key={memes.id}
               meme={memes.meme}
-              memeClicked={this.memeClicked}
+              onClick={this.handleClick}
             />))}
             </div>
           </Container>
